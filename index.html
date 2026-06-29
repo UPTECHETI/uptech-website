@@ -119,6 +119,24 @@
       display: block !important;
     }
 
+    /* Logo cards — clientes & parceiros */
+    .logo-card {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .logo-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0, 170, 191, 0.18);
+    }
+    .logo-card--svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+    }
+
     /* Segment card SVG circle */
     .seg-circle {
       width: 64px; height: 64px;
@@ -659,6 +677,86 @@
           </div>
           <h3 class="font-bold text-base mb-2">Comércio</h3>
           <p class="text-xs leading-relaxed" style="color:#7A8BA8">Redes, PDV, backup e segurança para o varejo local</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CLIENTES & PARCEIROS
+  ============================= -->
+  <section style="background:#060E1A;padding:60px 0 64px;border-top:1px solid rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.04)">
+    <div class="container">
+
+      <div class="text-center mb-12">
+        <p class="font-bold uppercase tracking-widest mb-3" style="color:#00AABF;font-size:0.7rem;letter-spacing:0.22em">
+          Clientes &amp; Parceiros
+        </p>
+        <h2 class="font-black mb-4" style="font-size:clamp(1.5rem,3vw,2.2rem);letter-spacing:-0.02em">
+          Empresas que <span class="text-gradient">confiam</span> na UP Tech
+        </h2>
+        <div class="gradient-bar w-12 mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-3 md:gap-4">
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0s">
+          <img src="/src/assets/logos/bms.png" alt="BMS" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.05s">
+          <img src="/src/assets/logos/renner.png" alt="Renner" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.1s">
+          <img src="/src/assets/logos/skycompany.png" alt="SkyCompany Infra" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.15s">
+          <img src="/src/assets/logos/atacadao.png" alt="Atacadão" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.2s">
+          <img src="/src/assets/logos/camicado.png" alt="Camicado" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.25s">
+          <img src="/src/assets/logos/js-refeicoes.png" alt="JS Refeições" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.3s">
+          <img src="/src/assets/logos/lyondellbasell.png" alt="LyondellBasell" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.05s">
+          <img src="/src/assets/logos/hstern.png" alt="H.Stern" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.1s">
+          <img src="/src/assets/logos/youcom.png" alt="YouCom" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.15s">
+          <img src="/src/assets/logos/missiato.png" alt="Missiato" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.2s">
+          <img src="/src/assets/logos/john-deere.png" alt="John Deere — Nissey Máquinas" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.25s">
+          <img src="/src/assets/logos/ecosolys.png" alt="ecoSolys" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <div class="logo-card animate-on-scroll" style="transition-delay:0.3s">
+          <img src="/src/assets/logos/assai.png" alt="Assaí Atacadista" loading="lazy" class="w-full h-auto block">
+        </div>
+
+        <!-- Elgin — SVG direto, normalizado visualmente via padding interno -->
+        <div class="logo-card logo-card--svg animate-on-scroll" style="transition-delay:0.35s">
+          <img src="/src/assets/logos/elgin.svg" alt="Elgin" loading="lazy"
+               style="width:100%;max-height:56px;object-fit:contain;display:block;padding:14px 20px">
         </div>
 
       </div>
