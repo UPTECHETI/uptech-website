@@ -24,6 +24,5 @@ jobs:
       - name: Deploy to Vercel
         run: |
           npx vercel --token ${{ secrets.VERCEL_TOKEN }} --prod --yes \
-            --name uptech-website \
-            --project-id ${{ secrets.VERCEL_PROJECT_ID }} \
+            --project ${{ secrets.VERCEL_PROJECT_ID }} \
             ./dist
