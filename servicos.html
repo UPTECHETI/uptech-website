@@ -218,6 +218,39 @@
         </div>
 
       </div>
+
+      <!-- Vídeos da equipe em campo -->
+      <div class="mt-10">
+        <p class="text-center font-bold uppercase tracking-widest mb-6" style="color:#00AABF;font-size:0.7rem;letter-spacing:0.2em">Registros reais em obra</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+          <div class="rounded-2xl overflow-hidden border border-white/10 animate-on-scroll" style="background:#0F1E35">
+            <video class="w-full block" controls preload="none"
+                   poster="/src/assets/photos/plataforma-fabrica.jpg"
+                   style="max-height:320px;object-fit:cover">
+              <source src="/src/assets/videos/campo-01.mp4" type="video/mp4">
+            </video>
+            <div class="p-4">
+              <p class="text-sm font-bold mb-1">Instalação em ambiente industrial</p>
+              <p class="text-xs" style="color:#7A8BA8">Trabalho em altura com plataforma JLC em fábrica de Manaus — instalação de infraestrutura de rede.</p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-white/10 animate-on-scroll" style="background:#0F1E35;transition-delay:0.1s">
+            <video class="w-full block" controls preload="none"
+                   poster="/src/assets/photos/equipe-altura-harness.jpg"
+                   style="max-height:320px;object-fit:cover">
+              <source src="/src/assets/videos/campo-02.mp4" type="video/mp4">
+            </video>
+            <div class="p-4">
+              <p class="text-sm font-bold mb-1">Trabalho com harness e EPI completo</p>
+              <p class="text-xs" style="color:#7A8BA8">Execução segura com equipamentos de proteção certificados NR-35. Segurança em cada etapa do serviço.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -239,34 +272,51 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-        <div class="relative bg-brand-card rounded-2xl p-7 border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all">
-          <div class="bracket-tl"></div>
-          <div class="icon-box w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-            <svg width="22" height="22" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <!-- Suporte Técnico -->
+        <div class="relative bg-brand-card rounded-2xl overflow-hidden border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all animate-on-scroll">
+          <div style="aspect-ratio:16/9;overflow:hidden">
+            <img src="/src/assets/photos/equipe-trabalho.jpg"
+                 alt="Equipe UP Tech configurando rack de rede"
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy">
           </div>
-          <h3 class="text-lg font-bold mb-3">Suporte Técnico</h3>
-          <p class="text-sm leading-relaxed" style="color:#7A8BA8">
-            Contratos mensais adaptados ao porte da empresa. Atendimento preventivo e corretivo com SLA garantido, presencial em Manaus e remoto. Nunca deixamos um chamado sem resposta.
-          </p>
-          <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Suporte%20Técnico%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
-            Solicitar orçamento
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="p-6 relative">
+            <div class="bracket-tl"></div>
+            <div class="icon-box w-10 h-10 rounded-xl flex items-center justify-center mb-3">
+              <svg width="20" height="20" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Suporte Técnico</h3>
+            <p class="text-sm leading-relaxed" style="color:#7A8BA8">
+              Contratos mensais adaptados ao porte da empresa. Atendimento preventivo e corretivo com SLA garantido, presencial em Manaus e remoto. Nunca deixamos um chamado sem resposta.
+            </p>
+            <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Suporte%20Técnico%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
+              Solicitar orçamento
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
 
-        <div class="relative bg-brand-card rounded-2xl p-7 border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all">
-          <div class="bracket-tl"></div>
-          <div class="icon-box w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-            <svg width="22" height="22" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        <!-- Monitoramento de TI -->
+        <div class="relative bg-brand-card rounded-2xl overflow-hidden border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all animate-on-scroll" style="transition-delay:0.1s">
+          <div style="aspect-ratio:16/9;overflow:hidden">
+            <img src="/src/assets/photos/cftv-central-monitoramento.jpg"
+                 alt="Central de monitoramento com múltiplos monitores — UP Tech"
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy"
+                 style="object-position:center top">
           </div>
-          <h3 class="text-lg font-bold mb-3">Monitoramento de TI</h3>
-          <p class="text-sm leading-relaxed" style="color:#7A8BA8">
-            Monitoramento em tempo real de servidores, link de internet e ativos de rede. Identificamos e resolvemos problemas antes que afetem sua operação.
-          </p>
-          <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Monitoramento%20de%20TI%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
-            Solicitar orçamento
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="p-6 relative">
+            <div class="bracket-tl"></div>
+            <div class="icon-box w-10 h-10 rounded-xl flex items-center justify-center mb-3">
+              <svg width="20" height="20" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Monitoramento de TI</h3>
+            <p class="text-sm leading-relaxed" style="color:#7A8BA8">
+              Monitoramento em tempo real de servidores, link de internet e ativos de rede. Identificamos e resolvemos problemas antes que afetem sua operação.
+            </p>
+            <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Monitoramento%20de%20TI%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
+              Solicitar orçamento
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -291,64 +341,97 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-        <div class="relative bg-brand-card-2 rounded-2xl p-7 border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all">
-          <div class="bracket-tl"></div>
-          <div class="icon-box w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-            <svg width="22" height="22" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
+        <!-- Cabeamento Estruturado -->
+        <div class="relative bg-brand-card-2 rounded-2xl overflow-hidden border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all animate-on-scroll">
+          <div style="aspect-ratio:16/9;overflow:hidden">
+            <img src="/src/assets/photos/cabeamento-leito.jpg"
+                 alt="Leito de cabos CAT com eletroduto flexível — instalação UP Tech"
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy">
           </div>
-          <h3 class="text-lg font-bold mb-3">Cabeamento Estruturado</h3>
-          <p class="text-sm leading-relaxed" style="color:#7A8BA8">
-            Pontos de rede Cat5e/Cat6 certificados. Projetos completos com eletroduto, rack, patch panel e certificação por ponto. Do pequeno escritório à indústria.
-          </p>
-          <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Cabeamento%20Estruturado%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
-            Solicitar orçamento
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="p-6 relative">
+            <div class="bracket-tl"></div>
+            <div class="icon-box w-10 h-10 rounded-xl flex items-center justify-center mb-3">
+              <svg width="20" height="20" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Cabeamento Estruturado</h3>
+            <p class="text-sm leading-relaxed" style="color:#7A8BA8">
+              Pontos de rede Cat5e/Cat6 certificados. Projetos completos com eletroduto, rack, patch panel e certificação por ponto. Do pequeno escritório à indústria.
+            </p>
+            <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Cabeamento%20Estruturado%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
+              Solicitar orçamento
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
 
-        <div class="relative bg-brand-card-2 rounded-2xl p-7 border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all">
-          <div class="bracket-tl"></div>
-          <div class="icon-box w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-            <svg width="22" height="22" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <!-- Servidores -->
+        <div class="relative bg-brand-card-2 rounded-2xl overflow-hidden border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all animate-on-scroll" style="transition-delay:0.1s">
+          <div style="aspect-ratio:16/9;overflow:hidden">
+            <img src="/src/assets/photos/servidor-rack-hpe.jpg"
+                 alt="Rack de servidor HPE ProLiant com UPS APC — sala de TI"
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy"
+                 style="object-position:center center">
           </div>
-          <h3 class="text-lg font-bold mb-3">Servidores Físicos e Virtuais</h3>
-          <p class="text-sm leading-relaxed" style="color:#7A8BA8">
-            Instalação e configuração de Windows Server, Active Directory, DNS e DHCP. Projetos de virtualização com Proxmox e Hyper-V para reduzir custos e aumentar disponibilidade.
-          </p>
-          <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Servidores%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
-            Solicitar orçamento
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="p-6 relative">
+            <div class="bracket-tl"></div>
+            <div class="icon-box w-10 h-10 rounded-xl flex items-center justify-center mb-3">
+              <svg width="20" height="20" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Servidores Físicos e Virtuais</h3>
+            <p class="text-sm leading-relaxed" style="color:#7A8BA8">
+              Instalação e configuração de Windows Server, Active Directory, DNS e DHCP. Projetos de virtualização com Proxmox e Hyper-V para reduzir custos e aumentar disponibilidade.
+            </p>
+            <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Servidores%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
+              Solicitar orçamento
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
 
-        <div class="relative bg-brand-card-2 rounded-2xl p-7 border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all">
-          <div class="bracket-tl"></div>
-          <div class="icon-box w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-            <svg width="22" height="22" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
+        <!-- WiFi Corporativo -->
+        <div class="relative bg-brand-card-2 rounded-2xl overflow-hidden border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all animate-on-scroll" style="transition-delay:0.05s">
+          <div style="aspect-ratio:16/9;overflow:hidden">
+            <img src="/src/assets/photos/wifi-loja-ap.jpg"
+                 alt="Access point Ubiquiti instalado no teto de loja — cobertura WiFi corporativa"
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy">
           </div>
-          <h3 class="text-lg font-bold mb-3">WiFi Corporativo</h3>
-          <p class="text-sm leading-relaxed" style="color:#7A8BA8">
-            Projetos de cobertura total para ambientes empresariais. Configuração com SSID, VLAN e controle por MAC — só acessa quem você autorizar.
-          </p>
-          <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20WiFi%20Corporativo%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
-            Solicitar orçamento
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="p-6 relative">
+            <div class="bracket-tl"></div>
+            <div class="icon-box w-10 h-10 rounded-xl flex items-center justify-center mb-3">
+              <svg width="20" height="20" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">WiFi Corporativo</h3>
+            <p class="text-sm leading-relaxed" style="color:#7A8BA8">
+              Projetos de cobertura total para ambientes empresariais. Configuração com SSID, VLAN e controle por MAC — só acessa quem você autorizar.
+            </p>
+            <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20WiFi%20Corporativo%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
+              Solicitar orçamento
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
 
-        <div class="relative bg-brand-card-2 rounded-2xl p-7 border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all">
-          <div class="bracket-tl"></div>
-          <div class="icon-box w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-            <svg width="22" height="22" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <!-- Firewall -->
+        <div class="relative bg-brand-card-2 rounded-2xl overflow-hidden border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all animate-on-scroll" style="transition-delay:0.15s">
+          <div style="aspect-ratio:16/9;overflow:hidden">
+            <img src="/src/assets/photos/rack-organizado.jpg"
+                 alt="Rack organizado com switches e firewall pfSense — infra de rede UP Tech"
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy">
           </div>
-          <h3 class="text-lg font-bold mb-3">Firewall</h3>
-          <p class="text-sm leading-relaxed" style="color:#7A8BA8">
-            Implementação de pfSense e OPNsense com controle de tráfego em tempo real. Barreira profissional entre a sua rede e as ameaças da internet.
-          </p>
-          <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Firewall%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
-            Solicitar orçamento
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="p-6 relative">
+            <div class="bracket-tl"></div>
+            <div class="icon-box w-10 h-10 rounded-xl flex items-center justify-center mb-3">
+              <svg width="20" height="20" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Firewall</h3>
+            <p class="text-sm leading-relaxed" style="color:#7A8BA8">
+              Implementação de pfSense e OPNsense com controle de tráfego em tempo real. Barreira profissional entre a sua rede e as ameaças da internet.
+            </p>
+            <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Firewall%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
+              Solicitar orçamento
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -398,34 +481,50 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-        <div class="relative bg-brand-card rounded-2xl p-7 border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all">
-          <div class="bracket-tl"></div>
-          <div class="icon-box w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-            <svg width="22" height="22" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        <!-- Antivírus Gerenciado -->
+        <div class="relative bg-brand-card rounded-2xl overflow-hidden border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all animate-on-scroll">
+          <div style="aspect-ratio:16/9;overflow:hidden">
+            <img src="/src/assets/photos/rack-cftv.jpg"
+                 alt="Rack com equipamentos de TI e câmeras CFTV — proteção ativa de rede"
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy">
           </div>
-          <h3 class="text-lg font-bold mb-3">Antivírus Gerenciado</h3>
-          <p class="text-sm leading-relaxed" style="color:#7A8BA8">
-            Bitdefender GravityZone Business Security gerenciado pela UP Tech. Proteção ativa contra vírus, ransomware e ameaças avançadas — sem você precisar se preocupar.
-          </p>
-          <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Antivírus%20Gerenciado%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
-            Solicitar orçamento
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="p-6 relative">
+            <div class="bracket-tl"></div>
+            <div class="icon-box w-10 h-10 rounded-xl flex items-center justify-center mb-3">
+              <svg width="20" height="20" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Antivírus Gerenciado</h3>
+            <p class="text-sm leading-relaxed" style="color:#7A8BA8">
+              Bitdefender GravityZone Business Security gerenciado pela UP Tech. Proteção ativa contra vírus, ransomware e ameaças avançadas — sem você precisar se preocupar.
+            </p>
+            <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Antivírus%20Gerenciado%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
+              Solicitar orçamento
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
 
-        <div class="relative bg-brand-card rounded-2xl p-7 border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all">
-          <div class="bracket-tl"></div>
-          <div class="icon-box w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-            <svg width="22" height="22" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7zm4 0h8m-8 4h8m-8 4h4"/></svg>
+        <!-- Backup Gerenciado -->
+        <div class="relative bg-brand-card rounded-2xl overflow-hidden border border-white/5 hover:border-brand-accent/30 service-card-hover transition-all animate-on-scroll" style="transition-delay:0.1s">
+          <div style="aspect-ratio:16/9;overflow:hidden">
+            <img src="/src/assets/photos/sala-servidores.jpg"
+                 alt="Sala de servidores com UPS APC — backup e continuidade de negócios"
+                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy">
           </div>
-          <h3 class="text-lg font-bold mb-3">Backup Gerenciado</h3>
-          <p class="text-sm leading-relaxed" style="color:#7A8BA8">
-            Backup automático local + nuvem (Datasafer), criptografado e monitorado. Relatório mensal de verificação. Seus dados seguros mesmo no pior cenário.
-          </p>
-          <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Backup%20Gerenciado%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
-            Solicitar orçamento
-            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="p-6 relative">
+            <div class="bracket-tl"></div>
+            <div class="icon-box w-10 h-10 rounded-xl flex items-center justify-center mb-3">
+              <svg width="20" height="20" fill="none" stroke="#00AABF" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7zm4 0h8m-8 4h8m-8 4h4"/></svg>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Backup Gerenciado</h3>
+            <p class="text-sm leading-relaxed" style="color:#7A8BA8">
+              Backup automático local + nuvem (Datasafer), criptografado e monitorado. Relatório mensal de verificação. Seus dados seguros mesmo no pior cenário.
+            </p>
+            <a href="https://wa.me/5592991005074?text=Olá!%20Quero%20saber%20mais%20sobre%20Backup%20Gerenciado%20da%20UP%20Tech." target="_blank" rel="noopener" class="svc-btn">
+              Solicitar orçamento
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
 
       </div>
