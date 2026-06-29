@@ -1,0 +1,72 @@
+@import './tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg-dark);
+  color: var(--text-white);
+  line-height: 1.6;
+}
+
+/* Container padrão */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(90deg, var(--grad-start), var(--grad-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gradient bar */
+.gradient-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--grad-start), var(--grad-end));
+  border-radius: 2px;
+}
+
+/* Bracket corner decoration */
+.bracket-tl, .bracket-br {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+.bracket-tl {
+  top: 20px; left: 20px;
+  border-top: 2px solid rgba(0,212,240,0.3);
+  border-left: 2px solid rgba(0,212,240,0.3);
+}
+.bracket-br {
+  bottom: 20px; right: 20px;
+  border-bottom: 2px solid rgba(0,212,240,0.3);
+  border-right: 2px solid rgba(0,212,240,0.3);
+}
+
+/* Section padding */
+.section-py {
+  padding-top: var(--section-py);
+  padding-bottom: var(--section-py);
+}
+
+@layer utilities {
+  .bg-brand-gradient {
+    background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
+  }
+}

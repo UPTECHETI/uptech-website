@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre — UP Tech Soluções em Informática</title>
+  <meta name="description" content="Fundada em 2016 em Manaus, a UP Tech cuida da TI de empresas no Amazonas. Conheça nossa história, missão e área de atuação." />
+  <link rel="canonical" href="https://uptech.eti.br/sobre.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav style="background:rgba(10,22,40,0.95);backdrop-filter:blur(8px)" class="fixed top-0 left-0 right-0 z-50 border-b border-white/5">
+    <div class="container flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2">
+        <img src="/src/assets/logo.svg" alt="UP Tech" class="h-10 w-auto" />
+        <span class="font-black text-lg tracking-tight">UP <span class="text-gradient">Tech</span></span>
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm font-semibold">
+        <li><a href="/" data-nav-link class="text-brand-text-sec hover:text-brand-accent transition-colors">Home</a></li>
+        <li><a href="/servicos.html" data-nav-link class="text-brand-text-sec hover:text-brand-accent transition-colors">Serviços</a></li>
+        <li><a href="/sobre.html" data-nav-link class="text-white hover:text-brand-accent transition-colors">Sobre</a></li>
+        <li><a href="/contato.html" data-nav-link class="text-brand-text-sec hover:text-brand-accent transition-colors">Contato</a></li>
+      </ul>
+      <a href="https://wa.me/5592991005074?text=Olá!%20Vim%20pelo%20site%20da%20UP%20Tech%20e%20gostaria%20de%20mais%20informações."
+         target="_blank" rel="noopener"
+         class="hidden md:inline-flex items-center gap-2 bg-brand-gradient text-white text-sm font-bold px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+      <button id="nav-toggle" class="md:hidden text-white p-2" aria-label="Menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden border-t border-white/5">
+      <ul class="flex flex-col gap-0 text-sm font-semibold">
+        <li><a href="/" class="block px-6 py-4 text-brand-text-sec hover:bg-white/5">Home</a></li>
+        <li><a href="/servicos.html" class="block px-6 py-4 text-brand-text-sec hover:bg-white/5">Serviços</a></li>
+        <li><a href="/sobre.html" class="block px-6 py-4 text-white hover:bg-white/5">Sobre</a></li>
+        <li><a href="/contato.html" class="block px-6 py-4 text-brand-text-sec hover:bg-white/5">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO CURTO -->
+  <section class="pt-32 pb-16" style="background:linear-gradient(135deg,#0A1628 0%,#0F1E35 100%)">
+    <div class="container text-center">
+      <p class="text-brand-accent text-sm font-semibold uppercase tracking-widest mb-4">Nossa história</p>
+      <h1 class="text-4xl md:text-5xl font-black mb-4">Sobre a <span class="text-gradient">UP Tech</span></h1>
+      <div class="gradient-bar w-16 mx-auto mb-6"></div>
+      <p class="text-brand-text-sec text-lg max-w-2xl mx-auto">
+        Desde 2016 em Manaus, ajudamos empresas a terem uma TI que funciona — sem desculpas, sem sumiço, sem surpresa no chamado.
+      </p>
+    </div>
+  </section>
+
+  <!-- MISSÃO -->
+  <section class="section-py" style="background:var(--bg-dark)">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-brand-accent text-sm font-semibold uppercase tracking-widest mb-4">Missão</p>
+          <h2 class="text-3xl font-black mb-6">Por que a UP Tech existe</h2>
+          <p class="text-brand-text-sec leading-relaxed mb-5">
+            A UP Tech nasceu de uma percepção simples: empresas em Manaus precisavam de suporte técnico real — não de promessas que somem no segundo chamado.
+          </p>
+          <p class="text-brand-text-sec leading-relaxed mb-5">
+            Nossa missão é ser a extensão de TI de empresas que não querem (e não precisam) ter uma equipe interna de tecnologia, mas exigem a mesma qualidade de resposta, comprometimento e resultado.
+          </p>
+          <p class="text-brand-text-sec leading-relaxed">
+            Não vendemos horas. Vendemos continuidade, tranquilidade e crescimento.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-brand-card rounded-2xl p-6 border border-white/5 text-center">
+            <div class="text-4xl font-black text-gradient mb-2">2016</div>
+            <div class="text-sm text-brand-text-sec">Ano de fundação</div>
+          </div>
+          <div class="bg-brand-card rounded-2xl p-6 border border-white/5 text-center">
+            <div class="text-4xl font-black text-gradient mb-2">+10</div>
+            <div class="text-sm text-brand-text-sec">anos de mercado</div>
+          </div>
+          <div class="bg-brand-card rounded-2xl p-6 border border-white/5 text-center">
+            <div class="text-4xl font-black text-gradient mb-2">14</div>
+            <div class="text-sm text-brand-text-sec">serviços especializados</div>
+          </div>
+          <div class="bg-brand-card rounded-2xl p-6 border border-white/5 text-center">
+            <div class="text-4xl font-black text-gradient mb-2">AM</div>
+            <div class="text-sm text-brand-text-sec">foco no Amazonas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="section-py" style="background:var(--bg-card)">
+    <div class="container">
+      <div class="text-center mb-14">
+        <p class="text-brand-accent text-sm font-semibold uppercase tracking-widest mb-3">O que nos define</p>
+        <h2 class="text-3xl md:text-4xl font-black">Nossos <span class="text-gradient">diferenciais</span></h2>
+        <div class="gradient-bar w-16 mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="bg-brand-card-2 rounded-2xl p-7 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-brand-accent/10 flex items-center justify-center mb-4">
+            <svg width="24" height="24" fill="none" stroke="#00D4F0" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Resposta rápida</h3>
+          <p class="text-brand-text-sec text-sm">SLA definido em contrato. Você sabe exatamente quando vai ser atendido — e cobramos esse prazo de nós mesmos.</p>
+        </div>
+
+        <div class="bg-brand-card-2 rounded-2xl p-7 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-brand-accent/10 flex items-center justify-center mb-4">
+            <svg width="24" height="24" fill="none" stroke="#00D4F0" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Zero chamados em aberto</h3>
+          <p class="text-brand-text-sec text-sm">Cada problema tem dono, prazo e fechamento registrado. Nenhuma demanda some sem resposta.</p>
+        </div>
+
+        <div class="bg-brand-card-2 rounded-2xl p-7 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-brand-accent/10 flex items-center justify-center mb-4">
+            <svg width="24" height="24" fill="none" stroke="#00D4F0" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Proatividade</h3>
+          <p class="text-brand-text-sec text-sm">Monitoramos o ambiente antes do problema aparecer. Muitas paradas são evitadas porque identificamos o sinal antes do alarme.</p>
+        </div>
+
+        <div class="bg-brand-card-2 rounded-2xl p-7 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-brand-accent/10 flex items-center justify-center mb-4">
+            <svg width="24" height="24" fill="none" stroke="#00D4F0" stroke-width="2" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Equipe treinada</h3>
+          <p class="text-brand-text-sec text-sm">Técnicos com certificações e atualização constante. O problema do cliente chega para pessoas que sabem o que estão fazendo.</p>
+        </div>
+
+        <div class="bg-brand-card-2 rounded-2xl p-7 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-brand-accent/10 flex items-center justify-center mb-4">
+            <svg width="24" height="24" fill="none" stroke="#00D4F0" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Relatórios mensais</h3>
+          <p class="text-brand-text-sec text-sm">O cliente recebe relatório mensal com todos os chamados, status dos backups, antivírus e saúde geral do ambiente.</p>
+        </div>
+
+        <div class="bg-brand-card-2 rounded-2xl p-7 border border-white/5">
+          <div class="w-12 h-12 rounded-xl bg-brand-accent/10 flex items-center justify-center mb-4">
+            <svg width="24" height="24" fill="none" stroke="#00D4F0" stroke-width="2" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Over-delivery</h3>
+          <p class="text-brand-text-sec text-sm">Entregamos mais do que o contrato especifica. O cliente percebe o valor além do que paga — e isso faz a diferença na renovação.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ÁREA DE ATUAÇÃO -->
+  <section class="section-py" style="background:var(--bg-dark)">
+    <div class="container">
+      <div class="text-center mb-14">
+        <p class="text-brand-accent text-sm font-semibold uppercase tracking-widest mb-3">Cobertura</p>
+        <h2 class="text-3xl md:text-4xl font-black">Área de <span class="text-gradient">atuação</span></h2>
+        <div class="gradient-bar w-16 mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Manaus e região metropolitana</h3>
+          <p class="text-brand-text-sec mb-6">
+            Atendimento presencial e gerenciado em todos os bairros de Manaus, com suporte local também nos municípios da região:
+          </p>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="flex items-center gap-2 text-sm">
+              <span class="w-2 h-2 rounded-full bg-brand-accent shrink-0"></span>
+              <span>Manaus</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+              <span class="w-2 h-2 rounded-full bg-brand-accent shrink-0"></span>
+              <span>Manacapuru</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+              <span class="w-2 h-2 rounded-full bg-brand-accent shrink-0"></span>
+              <span>Iranduba</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+              <span class="w-2 h-2 rounded-full bg-brand-accent shrink-0"></span>
+              <span>Presidente Figueiredo</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+              <span class="w-2 h-2 rounded-full bg-brand-accent shrink-0"></span>
+              <span>Rio Preto da Eva</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+              <span class="w-2 h-2 rounded-full bg-brand-accent shrink-0"></span>
+              <span>Itacoatiara</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+              <span class="w-2 h-2 rounded-full bg-brand-accent shrink-0"></span>
+              <span>Silves</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+              <span class="w-2 h-2 rounded-full bg-brand-accent shrink-0"></span>
+              <span>Itapiranga</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Projetos especiais</h3>
+          <p class="text-brand-text-sec mb-6">
+            Para projetos de maior porte ou clientes com operações em outras localidades, a UP Tech atende também em:
+          </p>
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center gap-3 bg-brand-card rounded-xl px-5 py-4 border border-white/5">
+              <span class="text-2xl">&#x1F30E;</span>
+              <div>
+                <div class="font-bold text-sm">Boa Vista — RR</div>
+                <div class="text-xs text-brand-text-sec">Projetos sob demanda com deslocamento</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 bg-brand-card rounded-xl px-5 py-4 border border-white/5">
+              <span class="text-2xl">&#x2601;&#xFE0F;</span>
+              <div>
+                <div class="font-bold text-sm">Remoto — Nacional</div>
+                <div class="text-xs text-brand-text-sec">Gestão remota de servidores, cloud e monitoramento</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CNPJ / DADOS LEGAIS -->
+  <section class="py-12" style="background:var(--bg-card)">
+    <div class="container text-center">
+      <p class="text-brand-text-sec text-sm">
+        <strong class="text-white">UP Tech Soluções em Informática</strong> — CNPJ 26.242.168/0001-05
+        <span class="mx-3">|</span>
+        Rua Conquista, 61 — Manaus, AM
+        <span class="mx-3">|</span>
+        contato@uptech.eti.br
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-py bg-brand-gradient">
+    <div class="container text-center">
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-6">Vamos trabalhar juntos?</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">Entre em contato agora mesmo. Avaliamos o seu ambiente e apresentamos uma proposta sem compromisso.</p>
+      <a href="https://wa.me/5592991005074?text=Olá!%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20UP%20Tech."
+         target="_blank" rel="noopener"
+         class="inline-flex items-center gap-3 bg-white text-brand-bg font-black text-xl px-10 py-5 rounded-2xl hover:bg-white/90 transition-colors shadow-2xl">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#060E1A;border-top:1px solid rgba(255,255,255,0.05)">
+    <div class="container py-10">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-brand-text-sec">
+        <span>&copy; 2026 UP Tech Soluções em Informática. CNPJ 26.242.168/0001-05</span>
+        <div class="flex gap-6">
+          <a href="/" class="hover:text-brand-accent transition-colors">Home</a>
+          <a href="/servicos.html" class="hover:text-brand-accent transition-colors">Serviços</a>
+          <a href="/sobre.html" class="hover:text-brand-accent transition-colors">Sobre</a>
+          <a href="/contato.html" class="hover:text-brand-accent transition-colors">Contato</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a id="wa-fab" href="#" target="_blank" rel="noopener"
+     class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg shadow-black/40 hover:scale-110 transition-transform"
+     aria-label="Contato via WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script type="module" src="/src/js/nav.js"></script>
+  <script type="module" src="/src/js/whatsapp.js"></script>
+</body>
+</html>

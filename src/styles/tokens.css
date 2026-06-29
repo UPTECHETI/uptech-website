@@ -1,0 +1,16 @@
+:root {
+  --grad-start:  #00D4F0;
+  --grad-end:    #0082A8;
+  --teal-mid:    #00A8C8;
+  --bg-dark:     #0A1628;
+  --bg-card:     #0F1E35;
+  --bg-card-2:   #132030;
+  --text-white:  #FFFFFF;
+  --text-sec:    #7A8BA8;
+  --accent:      #00D4F0;
+  --font:        'Montserrat', sans-serif;
+
+  /* Spacing */
+  --section-py:  80px;
+  --container-max: 1200px;
+}
