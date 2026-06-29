@@ -8,21 +8,49 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy to Vercel
+      - name: Trigger Vercel deployment via API
+        id: deploy
         run: |
-          npx vercel --token ${{ secrets.VERCEL_TOKEN }} --prod --yes \
-            --project ${{ secrets.VERCEL_PROJECT_ID }} \
-            ./dist
+          RESPONSE=$(curl -s -X POST "https://api.vercel.com/v13/deployments" \
+            -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "name": "uptech-website",
+              "project": "prj_SCR5Afyeoj2mYzAccUPvesNUmaXj",
+              "gitSource": {
+                "type": "github",
+                "org": "UPTECHETI",
+                "repo": "uptech-website",
+                "ref": "main"
+              },
+              "target": "production"
+            }')
+          echo "Response: $RESPONSE"
+          DEPLOY_ID=$(echo $RESPONSE | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('id',''))")
+          DEPLOY_URL=$(echo $RESPONSE | python3 -c "import json,sys; d=json.load(sys.stdin); print(d.get('url',''))")
+          echo "Deploy ID: $DEPLOY_ID"
+          echo "Deploy URL: https://$DEPLOY_URL"
+          echo "deploy_id=$DEPLOY_ID" >> $GITHUB_OUTPUT
+          echo "deploy_url=https://$DEPLOY_URL" >> $GITHUB_OUTPUT
+
+      - name: Wait for deployment to be ready
+        run: |
+          DEPLOY_ID="${{ steps.deploy.outputs.deploy_id }}"
+          echo "Aguardando deploy $DEPLOY_ID..."
+          for i in {1..30}; do
+            STATE=$(curl -s "https://api.vercel.com/v13/deployments/$DEPLOY_ID" \
+              -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" \
+              | python3 -c "import json,sys; print(json.load(sys.stdin).get('readyState',''))")
+            echo "[$i/30] State: $STATE"
+            if [ "$STATE" = "READY" ]; then
+              echo "✅ Deploy concluído!"
+              echo "🔗 URL: ${{ steps.deploy.outputs.deploy_url }}"
+              exit 0
+            elif [ "$STATE" = "ERROR" ] || [ "$STATE" = "CANCELED" ]; then
+              echo "❌ Deploy falhou: $STATE"
+              exit 1
+            fi
+            sleep 10
+          done
+          echo "⚠️ Timeout"
+          exit 1
