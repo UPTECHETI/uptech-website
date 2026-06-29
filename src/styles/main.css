@@ -81,3 +81,29 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Icon boxes — neutros por padrão, ciano só no hover */
+.icon-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+.icon-box svg {
+  stroke: rgba(255, 255, 255, 0.55);
+  transition: stroke 0.2s ease;
+}
+.service-card-hover:hover .icon-box {
+  background: rgba(0, 212, 240, 0.08);
+  border-color: rgba(0, 212, 240, 0.2);
+}
+.service-card-hover:hover .icon-box svg {
+  stroke: #00D4F0;
+}
+
+/* Bracket decoration — mais sutil */
+.bracket-tl {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.bracket-br {
+  border-color: rgba(255, 255, 255, 0.12);
+}
