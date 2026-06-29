@@ -93,11 +93,11 @@ body {
   transition: stroke 0.2s ease;
 }
 .service-card-hover:hover .icon-box {
-  background: rgba(0, 212, 240, 0.08);
-  border-color: rgba(0, 212, 240, 0.2);
+  background: rgba(0, 170, 191, 0.08);
+  border-color: rgba(0, 170, 191, 0.2);
 }
 .service-card-hover:hover .icon-box svg {
-  stroke: #00D4F0;
+  stroke: #00AABF;
 }
 
 /* Bracket decoration — mais sutil */
