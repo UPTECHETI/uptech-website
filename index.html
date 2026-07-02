@@ -835,9 +835,12 @@
         <!-- Caso 2 — CFTV com PTA em fábrica -->
         <div class="animate-on-scroll rounded-2xl overflow-hidden border border-white/10" style="background:#0F1E35">
           <div class="relative overflow-hidden" style="aspect-ratio:16/10">
-            <img class="w-full h-full object-cover" src="/src/assets/photos/plataforma-fabrica.jpg" alt="Plataforma elevatória PTA Azul em fábrica industrial Manaus">
-            <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(10,22,40,0.7) 0%, transparent 60%)"></div>
-            <div class="absolute bottom-4 left-4">
+            <video class="w-full h-full object-cover" autoplay muted loop playsinline
+                   poster="/src/assets/photos/plataforma-fabrica.jpg">
+              <source src="/src/assets/videos/fabrica-pta-cftv.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(10,22,40,0.7) 0%, transparent 60%);pointer-events:none"></div>
+            <div class="absolute bottom-4 left-4" style="pointer-events:none">
               <span class="text-xs font-bold px-3 py-1 rounded-full" style="background:rgba(0,170,191,0.9);color:white">CFTV · PTA</span>
             </div>
           </div>
