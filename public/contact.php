@@ -109,10 +109,14 @@ if (!$accessToken) {
 
 $subject = '[Formulário do Site] Novo contato — ' . ($fields['assunto'] !== '' ? $fields['assunto'] : 'Assunto não informado');
 
+// Nota: a API do Zoho Mail exige que o endereço de "replyTo" já esteja
+// verificado na conta — não aceita um email arbitrário de visitante
+// (confirmado em teste real: "You need to verify the ReplyTo address").
+// Por isso o email do cliente NÃO vai no replyTo, só destacado no corpo
+// (ver build_email_html) pra o Jaison copiar/colar na hora de responder.
 $payload = [
     'fromAddress' => ZOHO_SENDER_ADDRESS,
     'toAddress'   => ZOHO_RECIPIENT_ADDRESS,
-    'replyTo'     => $fields['email'] !== '' ? $fields['email'] : ZOHO_SENDER_ADDRESS,
     'subject'     => $subject,
     'content'     => build_email_html($fields),
     'mailFormat'  => 'html',
